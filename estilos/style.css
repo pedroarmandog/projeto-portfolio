@@ -102,11 +102,13 @@ div#social {
   font-size: 1.6em;
   gap: 1em;
   margin-top: 15px;
+  
 }
 
 div#social a {
   color: var(--destaque);
   transition: color 0.3s;
+  
 
 }
 
@@ -119,13 +121,20 @@ section#detalhes {
   grid-column: 2;
 }
 
+section#detalhes h2 {
+  color: var(--destaque)
+}
+
 article {
   background-color: var(--fundo-card);
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
-  color: var(--destaque)
-  
+}
+
+article h2 {
+  margin-bottom: 20px;
+
 }
 
 #skill-container {
@@ -159,6 +168,39 @@ article {
   height: 100%;
   background-color: var(--destaque-inverso);
   border-radius: 4px;
+}
+
+#formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  line-height: 0.5;
+  gap: 20px
+  ;
+}
+
+#formacao-container .curso {
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-width 0.3s, border-color 0.3s;
+
+}
+
+#formacao-container .curso:hover {
+  border-left-width: 15px;
+  cursor: pointer;
+  border-color: var(--destaque);
+}
+
+#formacao-container .periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao {
+  color: var(--destaque-inverso);
 }
 
 @media screen and (min-width: 768px) {
