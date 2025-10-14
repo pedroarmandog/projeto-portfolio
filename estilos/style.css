@@ -134,6 +134,7 @@ article {
   border-radius: 8px;
 }
 
+
 article h2 {
   margin-bottom: 20px;
 
@@ -209,7 +210,25 @@ article h2 {
   display: flex;
   flex-direction: column-reverse;
   gap: 20px;
+  text-decoration: none;
 }
+
+#projeto-container a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Mantém a cor do título */
+#projeto-container .projeto .titulo {
+  color: var(--destaque);
+}
+
+#projeto-container .projeto .periodo {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
 
 #projeto-container .projeto {
   display: flex;
